@@ -5,8 +5,8 @@ This is my first Django project.
 ### How to Run the Project on Your Device
 Follow these steps to set up and run this project on your local machine:
 
-1. Fork the Repository
-2. Clone the Repository
+1. Fork the Repository.
+2. Clone the Repository.
 Clone your forked repository to your local machine using the following command:
 ```
 git clone https://github.com/your-username/blog-app.git
