@@ -11,4 +11,5 @@ class Post(models.Model):
         return self.title
 
 
-# Create your models here.
+# Create your models here.# how the data are stored in the database
+# and how they are related to each other. The Post model represents a blog post with fields for title, content, date posted, and author.

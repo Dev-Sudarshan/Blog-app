@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'crispy_forms',
+    "crispy_bootstrap4",
     'users.apps.UsersConfig',
     'blog.apps.BlogConfig',
     'django.contrib.admin',
@@ -41,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+# CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"  # Change if using bootstrap5
+# CRISPY_TEMPLATE_PACK = "bootstrap4"  # Change if using bootstrap5
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -124,3 +128,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CRISPY_TEMPLATE_PACK='bootstrap4'
+
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+MEDIA_URL ='/media/'
+
+LOGIN_REDIRECT_URL = '/'
+# LOGOUT_REDIRECT_URL = 'login'
