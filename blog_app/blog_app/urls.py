@@ -33,3 +33,6 @@ urlpatterns = [
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+#When you navigate to URL in your browser Tango will look for the corresponding view function or class associated with that url pattern

@@ -2,12 +2,13 @@
 {% block content %}
     {% for post in posts %}
         <article class="media content-section">
+          <img class="rounded-circle" src="{{ post.author.profile.imageurl }}">
           <div class="media-body">
             <div class="article-metadata">
               <a class="mr-2" href="#">{{ post.author }}</a>
               <small class="text-muted">{{ post.date_posted }}</small>
             </div>
-            <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+            <h2><a class="article-title" href="{%url 'post-detail''post.id'}">{{ post.title }}</a></h2> <!-- here post.id referes to the primary key for each post described in urls.py file -->
             <p class="article-content">{{ post.content }}</p>
           </div>
         </article>
