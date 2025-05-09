@@ -13,10 +13,4 @@ class Post(models.Model):
         return self.title
     
     def get_absolute_url(self):
-        return reverse('post-detail', kwargs={'pk': self.pk}) # reverse  will return the path as a string to the view, and kwargs is a dictionary of keyword arguments that will be passed to the URL pattern.
-    
-
-
-
-# Create your models here.# how the data are stored in the database
-# and how they are related to each other. The Post model represents a blog post with fields for title, content, date posted, and author.
+        return reverse('post-detail', kwargs={'pk': self.pk}) 
