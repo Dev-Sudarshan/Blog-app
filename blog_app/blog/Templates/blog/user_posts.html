@@ -1,13 +1,16 @@
 {% extends "blog/base.html" %}
 {% block content %}
 {% load static %}
-<h1 class="mb-4" > Posts by {{views.kwargs.username}}</h1>
+<h1 class="mb-4">Posts by <span class="text-primary">{{ view.kwargs.username }}</span></h1>
+
+
+
     {% for post in posts %}
         <article class="media content-section">
           <img class="rounded-circle" src="{{ post.author.profile.imageurl }}">
           <div class="media-body">
             <div class="article-metadata">
-              <a class="mr-2" href="{% url 'user-posts' posts.author.username %}">{{ post.author }}</a>
+              <a class="mr-2" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
               <small class="text-muted">{{ post.date_posted }}</small>
             </div>
             <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2> 
