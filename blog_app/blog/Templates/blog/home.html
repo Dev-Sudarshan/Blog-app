@@ -2,7 +2,7 @@
 {% block content %}
     {% for post in posts %}
         <article class="media content-section">
-            <img class="rounded-circle" src="{{ post.author.profile.imageurl }}">
+            <img class="rounded-circle" src="{{ post.author.profile.image.url }}" style="width: 50px; height: 50px; object-fit: cover;">
             <div class="media-body">
                 <div class="article-metadata">
                     <a class="mr-2" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
@@ -13,7 +13,6 @@
             </div>
         </article>
     {% endfor %}
-
     {% if is_paginated %}
         {% if page_obj.has_previous %}
             <a class="btn btn-primary" href="?page=1">First</a>
