@@ -47,12 +47,7 @@ Visit http://127.0.0.1:8000/ in your browser to see the app in action.
 ### Features
 
 1.Add, edit, and delete blog posts.
-
-2.Categorize posts and add tags.
-
-3.Comment on blog posts (if implemented).
-
-4.Authentication and authorization for users.
+2.Authentication and authorization for users.
 
 ### Technologies Used
 
@@ -60,23 +55,4 @@ Visit http://127.0.0.1:8000/ in your browser to see the app in action.
 
 2.Python
 
-3.SQLite (or any other database you prefer)
-
-### Contributing
-
-1.Fork the repository.
-
-2.Create a branch for your feature 
-
-```
-git checkout -b feature-name
-```
-3.Commit your changes 
-```
-git commit -am 'Add new feature'
-```
-4.Push to the branch 
-```
-git push origin feature-name
-```
-5.Open a pull request.
+3.MySQL
